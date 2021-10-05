@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.2-stretch-browsers
+        auth:
+          username: tlqkddk123
+          password: younzv520@  # context / project UI env-var reference
+    steps:
+      - checkout
+      - run: pip install -r requirements/dev.txt
